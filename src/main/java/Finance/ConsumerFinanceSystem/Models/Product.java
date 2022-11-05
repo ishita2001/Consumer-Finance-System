@@ -9,7 +9,7 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CUST_SEQ")
 	@SequenceGenerator(sequenceName = "productid_seq", allocationSize = 1, name = "CUST_SEQ")
 	@Column(name = "prodid")
-	private int prodid;
+	private long prodid;
 	@Column(name = "prodname")
 	private String prodname;
 	@Column(name="price")
@@ -33,10 +33,10 @@ public class Product {
 		super();
 	}
 	
-	public int getProdid() {
+	public long getProdid() {
 		return prodid;
 	}
-	public void setProdid(int prodid) {
+	public void setProdid(long prodid) {
 		this.prodid = prodid;
 	}
 	public String getProdname() {
