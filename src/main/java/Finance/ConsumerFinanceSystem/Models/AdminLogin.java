@@ -12,6 +12,7 @@ public class AdminLogin {
     private String admin_name;
     private String admin_pass;
 
+
     public AdminLogin() {
     }
 
